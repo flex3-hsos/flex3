@@ -1,0 +1,6 @@
+# Knowledge base, assistant configuration and repository rules are maintained by the project lead.
+/knowledge-base/  @winf-hsos
+/.claude/         @winf-hsos
+/CLAUDE.md        @winf-hsos
+/.github/         @winf-hsos
+/pyproject.toml   @winf-hsos

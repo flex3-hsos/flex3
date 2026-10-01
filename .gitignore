@@ -1,0 +1,37 @@
+# Personal workspace of each team member
+local/
+
+# Python
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+*.egg-info/
+build/
+dist/
+
+# Secrets and configuration
+.env
+.env.*
+!.env.example
+
+# Media and real data never belong in the repository
+*.mp4
+*.mov
+*.mkv
+*.wav
+*.mp3
+*.m4a
+*.aac
+data/
+sessions/
+
+# Claude Code: personal settings stay local
+.claude/settings.local.json
+
+# Editors and OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

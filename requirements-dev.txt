@@ -1,0 +1,4 @@
+# Development tools shared by all work packages.
+# Runtime dependencies belong into the requirements.txt of each work package.
+ruff==0.16.9
+pytest==9.1.1

@@ -1,0 +1,35 @@
+# Shared tool configuration for all work packages.
+# This is not an installable package; each work package keeps its own requirements.txt.
+
+[tool.ruff]
+line-length = 100
+target-version = "py312"
+extend-exclude = [".venv", "local"]
+
+[tool.ruff.lint]
+select = [
+    "E", "W",   # pycodestyle
+    "F",        # pyflakes
+    "I",        # import order
+    "N",        # naming
+    "UP",       # modern syntax
+    "B",        # likely bugs
+    "SIM",      # simplifications
+    "PTH",      # pathlib instead of os.path
+    "S",        # security (hardcoded secrets, subprocess shell, ...)
+    "T20",      # no print() outside scripts
+    "LOG",      # logging misuse
+    "RUF",      # ruff-specific
+]
+ignore = ["RUF001", "RUF002", "RUF003"]  # German umlauts and typography in strings are fine
+
+[tool.ruff.lint.per-file-ignores]
+"**/tests/**" = ["S101"]           # assert is how pytest works
+"**/scripts/**" = ["T20"]          # command-line scripts may print
+".claude/hooks/**" = ["T20", "S603", "S607"]  # hook talks to Claude Code via stderr and calls git
+
+[tool.ruff.format]
+quote-style = "double"
+
+[tool.pytest.ini_options]
+addopts = "-q"
