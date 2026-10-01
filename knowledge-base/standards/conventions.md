@@ -34,7 +34,7 @@ Jedes Arbeitspaket unter `work-packages/` folgt demselben Aufbau, soweit es die 
 
 ```
 work-packages/<arbeitspaket>/
-  README.md            Ziel, Stand, Bedienung, Schnittstellen – Deutsch
+  README.md            Ziel, Stand, Einrichten, Starten, Testen, Schnittstellen – Deutsch
   requirements.txt     Laufzeitabhängigkeiten mit festen Versionen
   .env.example         benötigte Umgebungsvariablen, ohne echte Werte
   src/<paketname>/     der Code

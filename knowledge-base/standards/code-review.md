@@ -52,6 +52,7 @@ Diese Liste arbeitet der Assistent bei `/review` ab. Jeder Befund wird eingestuf
 
 - [ ] Neue Logik hat Tests; externe Dienste sind darin ersetzt. *(sollte, bei Datenumformung und Freigaben: muss)*
 - [ ] Das README des Arbeitspakets beschreibt den neuen Stand: was es kann, wie man es startet, welche Variablen es braucht. *(muss)*
+- [ ] Eine zweite Person kann den Baustein auf einem anderen Rechner allein nach dem README einrichten und testen: Abhängigkeiten mit Version, alle Variablen in `.env.example`, Testdaten ohne echte Aufzeichnungen, ein Befehl für die Tests, nichts, was nur auf dem eigenen Rechner liegt (siehe `python.md`, Grundsatz 5). Im Zweifel die Schritte aus dem README gedanklich auf einem frischen Klon durchgehen. *(muss)*
 
 ## Ton des Reviews
 

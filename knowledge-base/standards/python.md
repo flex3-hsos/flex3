@@ -8,6 +8,13 @@ Diese Standards gelten für allen Python-Code im Repository. Der Assistent prüf
 2. **Lesbar vor clever.** Der Code wird von Personen weitergeführt, die ihn nicht geschrieben haben. Eine verständliche Schleife schlägt einen eleganten Einzeiler.
 3. **Die Aufzeichnung geht nie verloren.** Nichts löschen, bevor der nächste Schritt bestätigt ist; Fehler nie verschlucken.
 4. **Klein und einzeln testbar.** Funktionen tun eine Sache. Wer eine Funktion nicht in einem Satz beschreiben kann, teilt sie auf.
+5. **Eine zweite Person auf einem anderen Rechner kann alles testen.** Jeder Baustein wird so gebaut und dokumentiert, dass jemand, der ihn nicht geschrieben hat, ihn auf einem anderen Rechner allein einrichten, starten und testen kann. Das heißt konkret:
+   - Das README beschreibt Einrichten, Starten und Testen Schritt für Schritt, ab einem frisch geklonten Repository.
+   - `requirements.txt` enthält jede Abhängigkeit mit fester Version; Werkzeuge außerhalb von Python (etwa ffmpeg) stehen mit Version im README.
+   - `.env.example` nennt jede Umgebungsvariable, die der Baustein braucht, mit einer kurzen Erklärung und ohne echte Werte.
+   - Testdaten liegen im Repository oder entstehen mit einem dokumentierten Befehl, etwa über den Simulator; echte Aufzeichnungen sind nie die einzige Möglichkeit zu testen.
+   - Ein einziger Befehl führt die Tests aus.
+   - Nichts hängt am eigenen Rechner: keine absoluten Pfade, keine Dateien, die nur lokal liegen, keine Einstellungen, die nirgends stehen.
 
 ## Werkzeuge
 
