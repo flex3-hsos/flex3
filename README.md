@@ -15,20 +15,13 @@ Dieses Repository ist der gemeinsame Arbeitsplatz des Projektteams. Es enthält 
 
 ## Loslegen
 
-Einmal installieren:
+Von Hand installiert ihr nur eines:
 
-1. **Git**: [git-scm.com/downloads](https://git-scm.com/downloads)
-2. **Python 3.12 oder neuer**: [python.org/downloads](https://www.python.org/downloads/) – unter Windows beim Installieren *Add python.exe to PATH* anhaken
-3. **GitHub CLI**: [cli.github.com](https://cli.github.com/)
-4. **Claude Code**: [claude.com/claude-code](https://claude.com/claude-code), Anmeldung mit dem Projektzugang
+1. **Claude Code**: [claude.com/claude-code](https://claude.com/claude-code), Anmeldung mit dem Projektzugang.
+2. **Das Repository holen**: Wer Git schon hat, klont es mit `git clone https://github.com/flex3-hsos/flex3.git`. Alle anderen laden es über den grünen Knopf **Code** → **Download ZIP** herunter und entpacken es.
+3. **Den Ordner `flex3` in Claude Code öffnen**, eine Sitzung starten und `/onboarding` eingeben.
 
-Dann das Repository klonen und öffnen:
-
-```bash
-git clone https://github.com/flex3-hsos/flex3.git
-```
-
-Den Ordner `flex3` in Claude Code öffnen, eine Sitzung starten und `/onboarding` eingeben. Der Assistent prüft die Werkzeuge, richtet die Python-Umgebung ein, fragt nach eurem Arbeitspaket und führt euch von da an.
+Der Assistent prüft dann Python, Git, VS Code und die GitHub CLI und installiert, was fehlt. Einen ZIP-Download macht er zu einem richtigen Git-Repository. Danach richtet er die Python-Umgebung ein, fragt nach eurem Arbeitspaket und führt euch von da an.
 
 ## Die Befehle
 
