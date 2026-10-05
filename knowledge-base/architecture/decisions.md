@@ -25,6 +25,9 @@ Getroffene Entscheidungen mit Begründung. Sie gelten, bis Nicolas sie ändert. 
 | **Gerät liefert an eigenen Ingest-Endpunkt** | Direktupload nach Opencast | Das Gerät bleibt einfach; Opencast-Änderungen betreffen nur den Server. |
 | **Eigene Transkriptionskomponente mit Adaptern**, `transcript.json` als Artefakt | Whisper-Integration von Opencast; fest verdrahteter Anbieter | eigene Modell- und Qualitätskontrolle, Anbieterwechsel als Konfiguration, kein doppeltes Transkribieren |
 | **Server verteilt den Stream** | Gerät streamt an die Studierenden | Das Gerät ist hinter Firewall und NAT nicht erreichbar, und sein Uplink würde mit der Zahl der Zuhörenden wachsen. |
-| **Auslieferung getrennt nach Zielgruppe**: WebSocket-Untertitel für den Hörsaal, LL-HLS für die Ferne | WebRTC für alle | WebRTC skaliert nicht in die Breite, und im Hörsaal braucht niemand Video. |
+| **Offen:** Auslieferung der Live-Untertitel, Varianten A, B und C in [live-pipeline.md](live-pipeline.md); bisheriger Entwurf war die Trennung nach Zielgruppe | WebRTC für alle | WebRTC skaliert nicht in die Breite; welche der drei Varianten gilt, wird vor dem Sommersemester 2027 entschieden. |
 | **Server von Anfang an im Rechenzentrum**, lokale Entwicklung mit `docker compose` | externe Cloud-VM als Zwischenstation | keine Migration am Projektende, Aufzeichnungen bleiben im Haus |
 | **Alles in Containern** | Handkonfiguration auf der VM | lokale und gehostete Umgebung sind identisch, und die Übergabe 2028 wird zur Formalie. |
+| **Test- und Produktivserver** | eine Maschine für Erprobung und Betrieb | Neue Stände lassen sich erproben, ohne laufende Veranstaltungen zu gefährden. |
+| **Weboberfläche für Lehrende mit Prüfschritt** | KI-Inhalte ungeprüft direkt in ILIAS | Lehrende wollen Inhalte prüfen, bevor Studierende sie sehen, und selbst bestimmen, was entsteht. |
+| **Cloud-Modelle zulässig, Qualität vor EU-Hosting** | nur in der EU gehostete Modelle | Eine funktionierende Lösung ist wichtiger als eine perfekte lokale; offengelegt wird, wohin Aufzeichnungen gehen. |

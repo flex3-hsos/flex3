@@ -42,7 +42,7 @@ Zwischen Gerät und Software liegt genau ein Artefakt, der Sitzungsordner. Einze
 
 ## Die Post-Pipeline (S1–S3, S7)
 
-Läuft nach der Vorlesung. Das Video geht sofort nach Opencast und damit in den ILIAS-Kurs; Transkript, Untertitel, Sprungmarken und Zusammenfassungen werden danach erzeugt und an das bestehende Opencast-Ereignis angehängt. Einzelheiten in [post-pipeline.md](post-pipeline.md).
+Läuft nach der Vorlesung. Das Video geht sofort nach Opencast und damit in den ILIAS-Kurs; Transkript, Untertitel, Sprungmarken und Zusammenfassungen werden danach erzeugt und an das bestehende Opencast-Ereignis angehängt. Bevor KI-Inhalte veröffentlicht werden, prüft und gibt die Lehrperson sie in einer Weboberfläche frei. Einzelheiten in [post-pipeline.md](post-pipeline.md).
 
 ## Die Live-Pipeline (S4–S6)
 
@@ -50,4 +50,4 @@ Läuft während der Vorlesung. Der Server verteilt den Stream an die Studierende
 
 ## Wo das alles läuft
 
-Der FLEX³-Server läuft auf einer virtuellen Maschine im Rechenzentrum der Hochschule, neben Opencast. Alles läuft in Containern. Entwickelt wird lokal: Der gesamte Stack läuft per `docker compose` auf dem eigenen Laptop, und auf die Maschine im Rechenzentrum wird nur deployt.
+Der FLEX³-Server läuft im Rechenzentrum der Hochschule, neben Opencast. Geplant sind ein Testserver und ein Produktivserver: Neue Stände laufen erst auf dem Testserver, dann im Betrieb. Alles läuft in Containern. Entwickelt wird lokal: Der gesamte Stack läuft per `docker compose` auf dem eigenen Laptop, und auf die Maschine im Rechenzentrum wird nur deployt.

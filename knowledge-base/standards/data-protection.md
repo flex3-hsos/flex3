@@ -21,7 +21,7 @@ Für Benchmark und Entwicklung gibt es echte Vorlesungsaufzeichnungen aus dem Vo
 
 ## Externe Dienste
 
-Für Transkription, KI-Inhalte und Dubbing werden Aufzeichnungen an externe Anbieter geschickt. Das ist nur mit den vom Projekt freigegebenen Anbietern und Zugängen erlaubt, nicht mit privaten Konten oder kostenlosen Testzugängen anderer Dienste.
+Für Transkription, KI-Inhalte und Dubbing werden Aufzeichnungen an externe Anbieter geschickt. Das ist nur mit den vom Projekt freigegebenen Anbietern und Zugängen erlaubt, nicht mit privaten Konten oder kostenlosen Testzugängen anderer Dienste. Cloud-Modelle dürfen auch außerhalb der EU laufen, wenn sie deutlich besser sind; welche Anbieter genutzt werden und wohin Aufzeichnungen gehen, wird gegenüber Lehrenden und Studierenden offengelegt.
 
 ## Wenn doch etwas hineingeraten ist
 

@@ -1,6 +1,6 @@
 # Live-Pipeline
 
-Die Live-Pipeline läuft während der Vorlesung: S4 (Livestream), S5 (Echtzeit-Untertitel) und S6 (übersetzte Audiospur).
+Die Live-Pipeline läuft während der Vorlesung: S4 (Livestream), S5 (Echtzeit-Untertitel) und S6 (übersetzte Audiospur). S6 gilt als kaum machbar und wird nur versucht.
 
 ## Aufbau
 
@@ -15,11 +15,31 @@ Das ist der wichtigste Stolperstein des Live-Pfads, denn zwei Zielgruppen haben 
 | Studierende **im Hörsaal**, die auf dem Laptop mitlesen | nur Untertiteltext, kein Video | synchron zur **gesprochenen Sprache**: 1–2 Sekunden |
 | Studierende **zu Hause** | Video und Untertitel | synchron zum **Stream** |
 
-Ein Stream über YouTube hat 10 bis 30 Sekunden Verzögerung, während Untertitel nach ein bis zwei Sekunden da sind. Für die Zuschauer zu Hause liefen die Untertitel dem Bild also weit voraus. Dieselben Untertitel werden deshalb **in zwei Zeitbasen** gebraucht: sofort für den Hörsaal und um die Streamlatenz verzögert für die Ferne.
+Ein Stream über YouTube hat 10 bis 30 Sekunden Verzögerung, während Untertitel nach ein bis zwei Sekunden da sind. Für die Zuschauer zu Hause liefen die Untertitel dem Bild also weit voraus. Sollen beide Gruppen Untertitel bekommen, die zu dem passen, was sie gerade sehen und hören, werden dieselben Untertitel **in zwei Zeitbasen** gebraucht: sofort für den Hörsaal und um die Streamlatenz verzögert für die Ferne. Ob das Projekt diesen Aufwand treibt, ist offen (siehe unten).
 
-YouTube taugt daher für den reinen Livestream (S4), aber nicht mehr für die Untertitel-Stufe; ab S5 liefern wir selbst aus.
+YouTube taugt daher für den reinen Livestream (S4), aber nicht mehr für Untertitel, die für alle passen sollen.
 
-## Auslieferung getrennt nach Zielgruppe
+## Wege für den Livestream (S4)
+
+- das Gerät als Kamera- und Bildquelle in einer Teams- oder Zoom-Sitzung, wie sie für hybride Veranstaltungen heute schon läuft,
+- YouTube für öffentliche Veranstaltungen,
+- ein eigener Stream über den FLEX³-Server, falls Lehrende keine der Plattformen wollen.
+
+Welche Plattform Lehrende bevorzugen, klärt eine Befragung.
+
+## Auslieferung der Untertitel: noch nicht entschieden
+
+Drei Varianten stehen zur Wahl; entschieden wird vor dem Sommersemester 2027, unter anderem auf Grundlage der Messungen aus der Bachelorarbeit zu den Live-Untertiteln.
+
+**Variante A – getrennt nach Zielgruppe** (bisheriger Entwurf, Einzelheiten unten): im Hörsaal nur Text über WebSocket, zu Hause ein Video mit passend verzögerten Untertiteln.
+
+**Variante B – ein Videostream mit Untertiteln für alle:** Alle schauen denselben Stream auf ihrem Gerät, im Saal wie zu Hause. Das ist ein einziger Weg und viel weniger zu bauen; dafür laufen die Untertitel im Saal der gesprochenen Sprache um die Streamlatenz hinterher, 3–6 Sekunden mit eigenem Stream, 10–30 Sekunden über YouTube.
+
+**Variante C – Untertitel im Beamerbild:** Alle im Saal sehen sie ohne eigenes Gerät. Läuft das ganze Bild über den Server, kommen auch die Folien Sekunden zu spät (C1, kaum akzeptabel). Wird nur die Textzeile im Gerät über das Bild gelegt (C2), bleiben die Folien ohne Verzögerung; dafür braucht das Gerät einen Rückkanal vom Server, und es gibt nur eine Sprache für alle.
+
+Die Varianten lassen sich kombinieren, etwa C2 im Saal und B für zu Hause.
+
+### Variante A im Detail
 
 | Zielgruppe | Auslieferung | Latenz | Serverlast |
 |---|---|---|---|

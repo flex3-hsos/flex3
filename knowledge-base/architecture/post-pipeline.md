@@ -45,13 +45,19 @@ Batch (für die Post-Pipeline) und Streaming (für Echtzeit-Untertitel) sind get
 
 **3. Fachbegriffe sind der größte Qualitätshebel.** Fast alle guten Anbieter erlauben, erwartete Begriffe vorzugeben. Die Begriffe kommen aus den Foliensätzen der Module und werden je Modul als Liste gepflegt.
 
-**Auswahl des Anbieters** per Benchmark an echtem Vorlesungsmaterial, nach diesen Kriterien: Qualität bei deutschem Fachvokabular, Wort-Zeitstempel, vorgebbare Fachbegriffe, Sprechertrennung, EU-Region mit Auftragsverarbeitungsvertrag, verfügbare Streaming-Variante und Preis je Audiostunde.
+**Auswahl des Anbieters** per Benchmark an echtem Vorlesungsmaterial, nach diesen Kriterien: Qualität bei deutschem Fachvokabular, Wort-Zeitstempel, vorgebbare Fachbegriffe, Sprechertrennung, verfügbare Streaming-Variante und Preis je Audiostunde. Hosting-Region und Auftragsverarbeitungsvertrag werden erhoben und offengelegt, entscheiden aber nicht allein: Cloud-Modelle sind zulässig, auch außerhalb der EU, wenn sie deutlich besser sind. Ein schwächeres Modell nur wegen des Standorts wird nicht gewählt.
 
 ## KI-Inhalte (S3)
 
 Aus `transcript.json` entstehen über eine LLM-API Zusammenfassung, Fassung in einfacher Sprache, Themenübersicht und Quiz. Die Arbeit steckt in Prompts und Vorlagen, nicht in Code. Prompts werden als Dateien versioniert (Prompt-Bibliothek), nicht in Python-Strings versteckt, damit man sie ohne Programmierkenntnis verbessern kann.
 
 Alle KI-Inhalte werden als KI-generiert gekennzeichnet.
+
+## Weboberfläche für Lehrende
+
+Jede Lehrperson bekommt eine schlichte Weboberfläche auf dem FLEX³-Server. Dort sieht sie die Ergebnisse ihrer Aufzeichnungen, stellt ein, was künftig entstehen soll (etwa Quiz an oder aus, Zusammenfassung zusätzlich in einer weiteren Sprache), und prüft die KI-Inhalte, bevor sie veröffentlicht werden. Die Einstellungen gelten ab der nächsten Aufzeichnung. Sie ersetzen nicht die Freigaben in `session.json`: Was veröffentlicht werden darf und ob ein Stimmklon zulässig ist, kommt weiter aus dem Nutzerregister.
+
+Offen ist, ob die Freigabe unmittelbar nach ILIAS veröffentlicht und ob auch das Video erst nach Prüfung erscheint.
 
 ## Dubbing (S7)
 
