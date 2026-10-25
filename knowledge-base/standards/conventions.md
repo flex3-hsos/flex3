@@ -21,7 +21,7 @@ Inhaltliche Nutzdaten behalten ihre Sprache: Ein Modultitel bleibt „Digitalisi
 
 | Was | Schreibweise | Beispiel |
 |---|---|---|
-| Ordner und Dateien | Kleinbuchstaben, Bindestriche (Python-Module: Unterstriche) | `work-packages/s2-transcription/`, `transcript_writer.py` |
+| Ordner und Dateien | Kleinbuchstaben, Bindestriche (Python-Module: Unterstriche) | `work-packages/transcription/`, `transcript_writer.py` |
 | Python-Funktionen und Variablen | `snake_case` | `extract_audio()` |
 | Python-Klassen | `PascalCase` | `TranscriptSegment` |
 | Konstanten | `UPPER_SNAKE_CASE` | `DEFAULT_LANGUAGE` |

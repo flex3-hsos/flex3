@@ -8,7 +8,7 @@
 main ──●──────────────●──────────────●──►
         \            / (Pull Request) \
          ●──●──●────●                  ●──●──► nächste Aufgabe
-         s2-transcription/benchmark-script
+         transcription/benchmark-script
 ```
 
 Den Ablauf übernimmt der Assistent mit `/ship`; ihr müsst die Befehle nicht auswendig kennen.
@@ -18,9 +18,9 @@ Den Ablauf übernimmt der Assistent mit `/ship`; ihr müsst die Befehle nicht au
 **Name:** `<arbeitspaket>/<kurzes-thema>`, englisch, Kleinbuchstaben, Bindestriche.
 
 ```
-s2-transcription/benchmark-script
-s3-ai-content/summary-prompt
-device-simulator/file-simulator
+transcription/benchmark-script
+ai-content/summary-prompt
+simulator/file-simulator
 ```
 
 Ein Zweig gehört zu genau einer Aufgabe und lebt höchstens zwei Wochen. Ist der Pull Request zusammengeführt, beginnt die nächste Aufgabe auf einem neuen Zweig von einem aktuellen `main`.
@@ -30,9 +30,9 @@ Ein Zweig gehört zu genau einer Aufgabe und lebt höchstens zwei Wochen. Ist de
 **Message:** englisch, Imperativ, mit dem Arbeitspaket als Präfix, höchstens 72 Zeichen in der ersten Zeile.
 
 ```
-s2-transcription: add batch adapter for provider X
-device-simulator: write session.json with consent defaults
-s3-ai-content: fix empty summary for short transcripts
+transcription: add batch adapter for provider X
+simulator: write session.json with consent defaults
+ai-content: fix empty summary for short transcripts
 ```
 
 Bei Bedarf folgt nach einer Leerzeile eine kurze Erklärung, warum die Änderung nötig war.

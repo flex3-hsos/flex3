@@ -2,7 +2,7 @@
 
 Es gibt genau ein Gerät, und es kann nicht gleichzeitig im Hörsaal stehen und auf eurem Schreibtisch liegen. Die meisten im Team werden die Hardware nie anfassen und sollen trotzdem von Anfang an produktiv sein. Dafür gibt es den Simulator: einen zweiten Erzeuger derselben Artefakte, der für die Software nicht vom echten Gerät zu unterscheiden ist.
 
-Der Simulator lebt im Arbeitspaket `work-packages/device-simulator/`.
+Der Simulator lebt im Arbeitspaket `work-packages/simulator/`.
 
 ## Stufe 1: Datei-Simulator
 

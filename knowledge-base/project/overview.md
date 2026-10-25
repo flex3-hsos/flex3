@@ -1,6 +1,6 @@
 # Projektüberblick
 
-**FLEX³ – Anytime, Anywhere, Any Language** entwickelt eine mobile, leicht bedienbare Appliance, die Lehrveranstaltungen mit minimalem Aufwand in flexible und barrierearme Lernangebote überführt. Die Lehrperson stellt das Gerät hin, schließt drei Kabel an (Strom, HDMI vom Laptop, Netzwerk), wählt einen Modus und drückt einen Knopf, und alles Weitere läuft automatisch.
+**FLEX³ – Anytime, Anywhere, Any Language** entwickelt eine mobile, leicht bedienbare Appliance, die Lehrveranstaltungen mit minimalem Aufwand in flexible und barrierearme Lernangebote überführt. Die Lehrperson stellt das Gerät hin, schließt vier Kabel an (Strom, Netzwerk, HDMI vom Laptop, HDMI zum Beamer), stellt die Kamera auf, die am Gerät hängt, und drückt Aufnahme, und alles Weitere läuft automatisch.
 
 Gefördert im Programm Flexcellence der Hochschule Osnabrück, Laufzeit 01.10.2026 bis 31.03.2028. Projektleitung: Prof. Dr. Nicolas Meseth.
 

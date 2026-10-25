@@ -3,7 +3,7 @@
 ```
 ┌─ Track H: das Gerät ──────────────────────────────────┐
 │                                                        │
-│  Kamera Nahbild ─────┐  (fest im Gerät, ausklappbar)    │
+│  Kamera Nahbild ─────┐  (am Kabel, wird aufgestellt)    │
 │  Kamera Totale ──────┤  (extern, optional)              │
 │  Funkmikrofon ───────┤►  ATEM Mini Pro ISO             │
 │  Laptop der Lehrperson┘       │           │            │
@@ -11,7 +11,7 @@
 │                               │            (Sicherung) │
 │                     RTMP über │ privates Geräte-LAN    │
 │                               ▼                        │
-│  Touch-Display ◄──►     Steuerrechner (Mini-PC N100)   │
+│  Display 3 Tasten ◄──►  Steuerrechner (Mini-PC N100)   │
 │                         MediaMTX · ffmpeg · Companion  │
 │                               │                        │
 └───────────────────────────────┼────────────────────────┘
@@ -30,11 +30,11 @@
 
 ## Das Gerät (Track H)
 
-Ein Rollkoffer mit Videomischer (ATEM Mini Pro ISO), fest verbauter Nahbildkamera, optionalem Anschluss für eine zweite Kamera, Funkmikrofon und einem kleinen Steuerrechner. Bedient wird es über ein Touch-Display mit Bitfocus Companion. Der Mischer zeichnet zur Sicherheit selbst auf eine SSD auf und schickt das Bild parallel per RTMP an den Steuerrechner.
+Eine geschlossene Appliance mit Videomischer (ATEM Mini Pro ISO), einer Nahbildkamera an einem festen Kabel, optionalem Anschluss für eine zweite Kamera, Funkmikrofon und einem kleinen Steuerrechner. Die Lehrperson schließt **vier Kabel** an (Strom, Netzwerk, HDMI vom Laptop, HDMI zum Beamer), nimmt die Kamera heraus, stellt sie auf und drückt Aufnahme. Das Display zeigt dafür nur **drei große Tasten: Aufnahme, Pause, Stopp**; dahinter steckt Bitfocus Companion. Das Bild des Laptops läuft über eine Durchschleife weiter zum Beamer, auch wenn das Gerät ausfällt. Der Mischer zeichnet zur Sicherheit selbst auf eine SSD auf und schickt das Bild parallel per RTMP an den Steuerrechner.
 
 Der Steuerrechner ist ein **reiner Kurier**: entgegennehmen, benennen, hochladen. Auf dem Gerät läuft keine KI. Er nimmt immer auf, auch ohne Netz, legt fertige Sitzungen in eine Warteschlange und lädt sie hoch, sobald eine Verbindung besteht (Store and Forward).
 
-Vor dem Aufnahmestart tippt die Lehrperson zweimal auf das Display: wer zeichnet auf und welche Veranstaltung. Damit weiß die Software, in welchen Kurs die Aufzeichnung gehört und welche Freigaben gelten. Die Freigaben stammen aus einem zentral gepflegten Nutzerregister und können am Gerät nur eingeschränkt, nie erweitert werden.
+Zur Aufzeichnung gehört eine Zuordnung: wer zeichnet auf und welche Veranstaltung. Damit weiß die Software, in welchen Kurs die Aufzeichnung gehört und welche Freigaben gelten. Vorgesehen sind dafür zwei Tipps auf Namenskacheln; wo das neben den drei Tasten geschieht, legt Nicolas noch fest. Die Freigaben stammen aus einem zentral gepflegten Nutzerregister und können am Gerät nur eingeschränkt, nie erweitert werden.
 
 ## Der Übergabepunkt
 
