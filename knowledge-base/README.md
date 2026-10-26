@@ -16,7 +16,7 @@ Für den Einstieg reichen die ersten vier Dateien. Den Rest liest der Assistent,
 | Datei | Inhalt |
 |---|---|
 | [project/overview.md](project/overview.md) | Ziel, Funktionen, Zielgruppen, Pilotmodule |
-| [project/roadmap.md](project/roadmap.md) | Ausbaustufen S1–S7, Phasen, Meilensteine |
+| [project/roadmap.md](project/roadmap.md) | Ausbaustufen S1–S7, Arbeitspakete und Rangfolge, Phasen, Meilensteine |
 | [project/team.md](project/team.md) | Rollen, Rhythmus, wie wir zusammenarbeiten |
 
 ## Architektur
@@ -27,6 +27,7 @@ Für den Einstieg reichen die ersten vier Dateien. Den Rest liest der Assistent,
 | [architecture/system-overview.md](architecture/system-overview.md) | Gerät, Post-Pipeline und Live-Pipeline im Überblick |
 | [architecture/session-folder.md](architecture/session-folder.md) | **der Vertrag** zwischen Gerät und Software: Sitzungsordner und `session.json` |
 | [architecture/device-simulator.md](architecture/device-simulator.md) | wie ihr ohne Hardware entwickelt und testet |
+| [../testdata/README.md](../testdata/README.md) | die zwei Beispiel-Sitzungen (Deutsch, Englisch), Testmaterial vor allem für die Transkription |
 | [architecture/post-pipeline.md](architecture/post-pipeline.md) | Ingest, Opencast, Transkription, KI-Inhalte, Dubbing |
 | [architecture/live-pipeline.md](architecture/live-pipeline.md) | Livestream, Echtzeit-Untertitel, Audiospur |
 | [architecture/decisions.md](architecture/decisions.md) | getroffene Designentscheidungen mit Begründung |

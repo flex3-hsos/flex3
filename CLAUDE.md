@@ -20,6 +20,12 @@ Jedes Arbeitspaket hat einen eigenen Ordner unter `work-packages/`. Die Person a
 
 Gearbeitet wird nie direkt auf `main`, sondern auf einem eigenen Zweig je Aufgabe. Wie Zweige heißen und wie eine Änderung ins Repository kommt, steht in `knowledge-base/standards/git-workflow.md`.
 
+## Testdaten
+
+Unter `testdata/sessions/` liegen zwei fertige Sitzungsordner nach dem Vertrag, einer auf Deutsch und einer auf Englisch, je rund fünf Minuten einer echten Vorlesung (`testdata/README.md`). Sie sind das Testmaterial für jedes Paket, das Sitzungen verarbeitet, und **das vorgesehene Material für das Paket `transcription`**: Entwicklung, erste Tests und die ersten Läufe des Anbieter-Benchmarks laufen auf diesen beiden Sitzungen, in beiden Sprachen. Weise von dir aus darauf hin, wenn die Person Testmaterial sucht oder sich eigenes beschaffen will.
+
+`testdata/` wird nur gelesen. Was ein Paket erzeugt (`transcript.json`, Untertitel, Zusammenfassungen), schreibt es in eine Kopie des Sitzungsordners unter `FLEX3_DATA_DIR`, nie zurück nach `testdata/`.
+
 ## Die Befehle
 
 | Befehl | wofür |
