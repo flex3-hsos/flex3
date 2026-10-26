@@ -7,8 +7,8 @@
 | **Projektleitung** (Prof. Dr. Nicolas Meseth) | technische Projektleitung: Architekturentscheidungen, Zuschnitt der Aufgaben, Spezifikationen, Review und Zusammenführen der Pull Requests, Pflege dieses Repositorys |
 | **Operative Projektleitung** | Koordination und Verwaltung, Weekly, Backlog, Kontakt zu Rechenzentrum und eLCC, Dokumentation; empirische Evaluation und didaktisches Konzept; sammelt die Rückmeldungen von Testerinnen und Testern und gibt sie ins Team |
 | **Track H – das Gerät** | alles bis einschließlich Übergabepunkt: Kameras, Mischer, Mikrofon, Steuerrechner und dessen Software (überwiegend Konfiguration fertiger Programme), Bedienung, Gehäuse, Aufbauanleitung |
-| **Track S – Pipeline** | Simulator sowie alles nach dem Übergabepunkt auf Serverseite: Ingest, Transkription, Integration, Robustheit |
-| **Track S – KI-Inhalte** | Upload-Automatisierung, Zusammenfassungen, einfache Sprache, Quiz, Prompt-Bibliothek |
+| **Track S – Pipeline** | Simulator sowie alles nach dem Übergabepunkt auf Serverseite: Ingest und Bereitstellung nach Opencast/ILIAS, Transkription, Integration, Robustheit (Pakete 1, 3, 4) |
+| **Track S – KI-Inhalte** | Zusammenfassungen, einfache Sprache, Quiz, Prompt-Bibliothek, Prüfung der Ergebnisse (Paket 5) |
 | **Technische Beratung (Rechenzentrum)** | Opencast-API, ILIAS-Anbindung, Netzfragen, Betrieb |
 
 Wer konkret welches Arbeitspaket bearbeitet, steht im Projektboard.

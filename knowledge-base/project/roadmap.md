@@ -14,12 +14,37 @@ Gebaut wird in sieben Stufen, von denen jede auf den vorherigen aufbaut. Die Rei
 | **S6** | Echtzeit-Audiospur | Erweiterung von S5 um Sprachausgabe; nur ein Versuch, im Antrag nicht zugesagt |
 | **S7** | Dubbing | reine Nachbearbeitung, die nichts blockiert und Freigaben mit Vorlauf braucht |
 
+## Arbeitspakete
+
+Gebaut wird nicht Stufe für Stufe, sondern in acht Arbeitspaketen, die entlang der Artefakte geschnitten sind (Sitzungsordner, `transcript.json`, Live-Stream). Jedes Paket kann eine Person mit wenigen Stunden pro Woche besitzen. Die Übersicht mit Ordnern steht in `work-packages/README.md`.
+
+| Paket | Stufen |
+|---|---|
+| 1 Simulator und Testmaterial | – |
+| 2 Gerät | S1 Geräteseite |
+| 3 Ingest und Bereitstellung | S1 Serverseite |
+| 4 Transkription | S2 |
+| 5 KI-Inhalte | S3 |
+| 6 Livestream | S4 |
+| 7 Live-Untertitel | S5, als Versuch S6 |
+| 8 Dubbing | S7 |
+
+**Rangfolge bei knapper Besetzung:**
+
+| Rang | Pakete | Warum |
+|---|---|---|
+| **1 · Kern** | Simulator, Transkription, Ingest und Bereitstellung, KI-Inhalte | Die Post-Pipeline wirkt für jede Aufzeichnung, auch ohne Gerät, und trägt Meilenstein M1. |
+| **2 · gesetzt** | Live-Untertitel, Teil 7a: Anbieterwahl und Prototyp | läuft über eine Bachelorarbeit und nimmt Risiko aus dem schwersten Teil |
+| **3 · günstig mitnehmen** | Livestream, Schritt 1: direkt zu YouTube | kostet keine Entwicklung |
+| **4 · nächster Ausbau** | Live-Untertitel, Teil 7b: Untertitel im Hörsaal | größter Nutzen des Live-Pfads bei überschaubarem Aufwand |
+| **5 · nur mit zusätzlicher Person** | Gerät über die vorhandene Hardware hinaus, eigene Stream-Auslieferung, Teil 7c, Audiospur, Dubbing | brauchen mehr Leute |
+
 ## Phasen
 
 | Phase | Zeitraum | Software (Track S) | Gerät (Track H) |
 |---|---|---|---|
-| P0 Durchstich | Okt–Dez 2026 | S1, S2, S3 | Gerät V1, Touch-Bedienung, Store and Forward |
-| P1 Härten | Jan–Mrz 2027 | S1–S3 produktionsreif, Player in ILIAS, S4 Livestream | V1 robust, Anschlussblende und Kamerahalterung gedruckt |
+| P0 Durchstich | Okt–Dez 2026 | S1, S2, S3 | Gerät V1, Bedienung mit drei Tasten, Store and Forward |
+| P1 Härten | Jan–Mrz 2027 | S1–S3 produktionsreif, Player in ILIAS, S4 Livestream | V1 robust, Anschlussblende, Kamerafuß und Kamerafach gedruckt |
 | P2 Live-Pfad | Apr–Jul 2027 | S5 Echtzeit-Untertitel | V2 im gedruckten Gehäuse, als Bausatz nachbaubar |
 | P3 Ausbau | Aug–Sep 2027 | S6 Audiospur als Versuch, Aufräumen, Monitoring | Betrieb, zweites Gerät testen |
 | P4 Vollbetrieb | Okt 2027–Jan 2028 | S7 Dubbing, Feinschliff | Regelbetrieb |

@@ -27,6 +27,11 @@ dist/
 data/
 sessions/
 
+# The only exception: the released example sessions in testdata/
+# (see knowledge-base/standards/data-protection.md, "Beispiel-Sitzungen")
+!testdata/sessions/
+!testdata/sessions/*/recording.mp4
+
 # Claude Code: personal settings stay local
 .claude/settings.local.json
 

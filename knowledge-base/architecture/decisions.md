@@ -12,8 +12,9 @@ Getroffene Entscheidungen mit Begründung. Sie gelten, bis Nicolas sie ändert. 
 | **RTMP vom Mischer zum Rechner** | USB-HDMI-Capture-Stick | kein Neucodieren, keine Rechenlast; der Stick bleibt Rückfallweg |
 | **Ton analog in den Mischer** | USB-Mikrofon am Rechner | Zwei Taktgeber driften, im Mischer ist der Versatz null. |
 | **Bitfocus Companion für die Bedienung** | eigene Touch-Oberfläche | fertiges Modul, null Code für Version 1 |
-| **Nahbildkamera fest im Gerät**, Totale optional | beide Kameras extern | Zwei Kameras aufzubauen ist Lehrenden nicht zumutbar. |
-| **Zuordnung per Namenskachel**, zwei Tipps | PIN oder Login | Es ist ein Zuordnungs-, kein Authentifizierungsproblem. |
+| **Nahbildkamera an einem festen Kabel des Geräts**, wird aufgestellt; Totale optional | fest im Gehäuse verbaut und ausklappbar; beide Kameras extern | Niemand muss eine Kamera anschließen, sie lässt sich aber frei ausrichten; ein fester Blickwinkel hätte nicht in jedem Raum ein brauchbares Bild geliefert. |
+| **Display mit drei großen Tasten**: Aufnahme, Pause, Stopp | Touch-Oberfläche mit vielen Funktionen | Bedienung ohne Einweisung; was darüber hinausgeht (Zuordnung, Livestream, Speicher), wird so untergebracht, dass es den Aufnahmestart nicht stört. |
+| **Zuordnung per Namenskachel**, zwei Tipps; wo sie neben den drei Tasten bedient wird, ist offen | PIN oder Login | Es ist ein Zuordnungs-, kein Authentifizierungsproblem. |
 | **Freigaben aus dem Nutzerregister**, am Gerät nur einschränkbar | Freigaben je Sitzung am Display | Niemand darf per Tipp Rechte für eine andere Person erteilen. |
 | **Aufnahme scheitert nie an der Zuordnung** | Zuordnung als Pflichtfeld | Eine fehlende Zuordnung ist reparierbar, eine fehlende Aufzeichnung nicht. |
 
