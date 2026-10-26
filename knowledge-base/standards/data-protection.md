@@ -6,7 +6,7 @@ Dieses Repository liegt auf GitHub. Was einmal eingecheckt ist, steht in der Ver
 
 | Was | Warum | Stattdessen |
 |---|---|---|
-| Vorlesungsaufzeichnungen, Audiodateien | Personen sind zu sehen und zu hören; Einwilligung gilt nur für den Kurs | lokal unter `FLEX3_DATA_DIR` |
+| Vorlesungsaufzeichnungen, Audiodateien (Ausnahme: die Beispiel-Sitzungen unten) | Personen sind zu sehen und zu hören; Einwilligung gilt nur für den Kurs | lokal unter `FLEX3_DATA_DIR` |
 | echte Transkripte und Zusammenfassungen | enthalten Gesagtes von Lehrenden und Studierenden | ausgedachte, kurze Beispieltexte |
 | Namen, Matrikelnummern, Kennungen von Studierenden | personenbezogene Daten | Platzhalter wie `student_01` |
 | Nutzerregister mit echten Lehrenden und Freigaben | personenbezogen und vertraulich | Beispieldatei mit erfundenen Einträgen |
@@ -15,9 +15,13 @@ Dieses Repository liegt auf GitHub. Was einmal eingecheckt ist, steht in der Ver
 
 `.gitignore` fängt die häufigsten Fälle ab (Mediendateien, `.env`, `data/`, `local/`), ersetzt aber nicht das Hinsehen beim Review.
 
+## Beispiel-Sitzungen im Repository
+
+Die einzige Ausnahme sind die Beispiel-Sitzungen unter `testdata/sessions/`: kurze Ausschnitte aus Vorlesungen von Nicolas, die ohnehin öffentlich auf YouTube stehen und in denen nur er zu sehen und zu hören ist. Nicolas hat sie am 26.10.2026 für das Repository freigegeben. Damit kann jede Person sofort nach dem Klonen testen. Weitere Aufzeichnungen kommen nur mit seiner ausdrücklichen Freigabe dazu und nur, wenn darin keine Studierenden zu sehen oder zu hören sind; `.gitignore` lässt außerhalb von `testdata/sessions/` weiterhin keine Mediendatei durch.
+
 ## Echtes Testmaterial
 
-Für Benchmark und Entwicklung gibt es echte Vorlesungsaufzeichnungen aus dem Vorprojekt. Sie werden euch separat bereitgestellt, liegen auf eurem Rechner in dem Ordner, auf den `FLEX3_DATA_DIR` zeigt, und verlassen ihn nur in Richtung der vereinbarten Dienste. Nicht weitergeben, nicht hochladen, nicht in Chats kopieren.
+Für Benchmark und Entwicklung gibt es außerdem echte Vorlesungsaufzeichnungen aus dem Vorprojekt. Sie werden euch separat bereitgestellt, liegen auf eurem Rechner in dem Ordner, auf den `FLEX3_DATA_DIR` zeigt, und verlassen ihn nur in Richtung der vereinbarten Dienste. Nicht weitergeben, nicht hochladen, nicht in Chats kopieren.
 
 ## Externe Dienste
 

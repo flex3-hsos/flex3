@@ -1,0 +1,22 @@
+{
+  "session_id": "2026-10-06_pvwp_excerpt-de",
+  "status": "assigned",
+  "course_name": "Planung und Vorbereitung wissenschaftlicher Projekte",
+  "instructor_id": "nimeseth",
+  "instructor_name": "Prof. Dr. Nicolas Meseth",
+  "recorded_at": "2026-10-06T00:00:00+02:00",
+  "duration_sec": 307,
+  "room": "test",
+  "language": "de",
+  "ilias_course_id": "test",
+  "opencast_series_id": "test",
+  "consent": {
+    "recording": true,
+    "publication": false,
+    "voice_clone": false
+  },
+  "consent_source": "register",
+  "device_id": "simulator",
+  "software_version": "0.0.0-manual",
+  "test_note": "Hand-built example from an excerpt of a lecture by Nicolas Meseth that is also published on YouTube; only he can be seen and heard. Released by him for the public repository on 2026-10-26. Time of day unknown, set to 00:00."
+}

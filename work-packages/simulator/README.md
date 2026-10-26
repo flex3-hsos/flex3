@@ -8,7 +8,7 @@ Derselbe Weg nimmt auch echte Aufzeichnungen an, die mit der vorhandenen Hardwar
 
 **Stufe 1 – Datei-Simulator:** Ein Skript nimmt eine beliebige Videodatei und erzeugt daraus einen Sitzungsordner nach `knowledge-base/architecture/session-folder.md` (`recording.mp4` plus `session.json` mit plausiblen Metadaten, `device_id: "simulator"`). Damit werden die Aufzeichnungen aus dem Vorprojekt zu einem Vorrat realistischer Testfälle.
 
-**Testmaterial:** einige Beispiel-Sitzungsordner, mit denen jedes Paket sofort testen kann. Echte Aufzeichnungen liegen nie im Repository, sondern unter `FLEX3_DATA_DIR`; für Tests im Repository reichen kurze, unverfängliche Ausschnitte oder erzeugte Dateien.
+**Testmaterial:** Zwei von Hand gebaute Beispiel-Sitzungen liegen schon unter `testdata/sessions/` (Deutsch und Englisch, je rund fünf Minuten). Der Simulator soll Ordner im selben Format erzeugen. Weitere Aufzeichnungen liegen nicht im Repository, sondern unter `FLEX3_DATA_DIR`.
 
 **Stufe 2 – Live-Simulator:** OBS-Profil und Szenensammlung, mit denen OBS sich gegenüber dem Server wie das Gerät verhält.
 

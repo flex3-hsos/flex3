@@ -8,7 +8,7 @@ Der Simulator lebt im Arbeitspaket `work-packages/simulator/`.
 
 Ein kleines Skript nimmt eine beliebige Videodatei und erzeugt daraus einen gültigen [Sitzungsordner](session-folder.md): Datei als `recording.mp4` ablegen, eine `session.json` mit plausiblen Metadaten daneben schreiben, `device_id` auf `simulator` setzen. Das reicht, um Upload, Transkription und Zusammenfassungen zu entwickeln.
 
-Der eigentliche Wert liegt im Eingabematerial: Aufzeichnungen echter Vorlesungen aus dem Vorprojekt im Wintersemester 2025/26, mit echter Hörsaalakustik, Nachhall und Fachvokabular. Sie liegen **nicht** im Repository, sondern werden euch separat bereitgestellt (siehe [data-protection.md](../standards/data-protection.md)); der Pfad steht in der Umgebungsvariable `FLEX3_DATA_DIR`.
+Der eigentliche Wert liegt im Eingabematerial: Aufzeichnungen echter Vorlesungen aus dem Vorprojekt im Wintersemester 2025/26, mit echter Hörsaalakustik, Nachhall und Fachvokabular. Sie liegen **nicht** im Repository, sondern werden euch separat bereitgestellt (siehe [data-protection.md](../standards/data-protection.md)); der Pfad steht in der Umgebungsvariable `FLEX3_DATA_DIR`. Bis dahin gibt es zwei fertige Beispiel-Sitzungen im Repository unter `testdata/sessions/`, eine auf Deutsch und eine auf Englisch.
 
 ## Stufe 2: Live-Simulator mit OBS
 

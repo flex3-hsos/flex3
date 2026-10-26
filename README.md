@@ -36,4 +36,4 @@ Der Assistent prüft dann Python, Git, VS Code und die GitHub CLI und installier
 
 Ihr arbeitet nie direkt auf `main`, sondern auf einem eigenen Zweig je Aufgabe. `/ship` prüft eure Änderungen, checkt sie ein und öffnet einen Pull Request; Nicolas sieht ihn durch und führt ihn zusammen. Ohne bestandenes Review lässt der Assistent keinen Commit zu. Einzelheiten in `knowledge-base/standards/git-workflow.md`.
 
-**Keine echten Daten ins Repository**: keine Vorlesungsaufzeichnungen, keine echten Transkripte, keine Namen, keine API-Schlüssel. Siehe `knowledge-base/standards/data-protection.md`.
+**Keine echten Daten ins Repository**: keine Vorlesungsaufzeichnungen, keine echten Transkripte, keine Namen, keine API-Schlüssel. Einzige Ausnahme sind die freigegebenen Beispiel-Sitzungen unter `testdata/sessions/`, mit denen ihr sofort testen könnt. Siehe `knowledge-base/standards/data-protection.md`.

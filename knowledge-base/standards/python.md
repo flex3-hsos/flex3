@@ -12,7 +12,7 @@ Diese Standards gelten für allen Python-Code im Repository. Der Assistent prüf
    - Das README beschreibt Einrichten, Starten und Testen Schritt für Schritt, ab einem frisch geklonten Repository.
    - `requirements.txt` enthält jede Abhängigkeit mit fester Version; Werkzeuge außerhalb von Python (etwa ffmpeg) stehen mit Version im README.
    - `.env.example` nennt jede Umgebungsvariable, die der Baustein braucht, mit einer kurzen Erklärung und ohne echte Werte.
-   - Testdaten liegen im Repository oder entstehen mit einem dokumentierten Befehl, etwa über den Simulator; echte Aufzeichnungen sind nie die einzige Möglichkeit zu testen.
+   - Testdaten liegen im Repository oder entstehen mit einem dokumentierten Befehl, etwa über den Simulator. Für ganze Sitzungen gibt es die Beispiel-Sitzungen unter `testdata/sessions/`; andere echte Aufzeichnungen sind nie die einzige Möglichkeit zu testen.
    - Ein einziger Befehl führt die Tests aus.
    - Nichts hängt am eigenen Rechner: keine absoluten Pfade, keine Dateien, die nur lokal liegen, keine Einstellungen, die nirgends stehen.
 
@@ -72,7 +72,7 @@ Diese Standards gelten für allen Python-Code im Repository. Der Assistent prüf
 
 - Logik, die Daten umformt oder Entscheidungen trifft, hat Tests: Parsen von `session.json`, Umrechnen von Zeitstempeln, Erzeugen von WebVTT, Auswerten der Freigaben.
 - Externe Dienste werden in Tests ersetzt (Fake-Objekt oder `unittest.mock`), damit Tests ohne Netz und ohne Kosten laufen.
-- Testdaten sind klein und synthetisch: eine Sekunde Stille statt einer Vorlesung, ein ausgedachtes Transkript statt eines echten.
+- Unit-Tests nutzen kleine, synthetische Testdaten: eine Sekunde Stille statt einer Vorlesung, ein ausgedachtes Transkript statt eines echten. Wer eine ganze Sitzung braucht, etwa für einen Durchlauf von Ende zu Ende, nimmt eine Beispiel-Sitzung aus `testdata/sessions/` und legt keine neue Aufzeichnung ins Repository.
 - Ein Test prüft eine Sache und heißt danach: `test_unassigned_session_is_not_published`.
 
 ## Notebooks
