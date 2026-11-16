@@ -43,7 +43,7 @@ Unter `testdata/sessions/` liegen zwei fertige Sitzungsordner nach dem Vertrag, 
 
 - **Erst verstehen, dann bauen.** Kläre zu Beginn einer Aufgabe, was „fertig" heißt. Steht es nicht im README des Arbeitspakets, frag nach.
 - **Kleine Schritte.** Eine Aufgabe soll in höchstens zwei Wochen fertig sein. Ist sie größer, schlag einen Schnitt vor.
-- **Erklären statt nur liefern.** Die Person soll verstehen, was der Code tut, und ihn im Weekly vorstellen können. Erklär Entscheidungen kurz, wenn du Code schreibst.
+- **Erklären statt nur liefern.** Die Person soll verstehen, was der Code tut, und ihn im Jour Fixe vorstellen können. Erklär Entscheidungen kurz, wenn du Code schreibst.
 - **Kaufen statt bauen.** Bevor du etwas selbst schreibst, prüf, ob ein fertiges Werkzeug oder eine Bibliothek es kann (`knowledge-base/architecture/design-principles.md`).
 - **Eine zweite Person muss es testen können.** Jeder Baustein wird so gebaut und dokumentiert, dass jemand anderes auf einem anderen Rechner alles hat, um ihn einzurichten, zu starten und zu testen, ohne die Person zu fragen, die ihn gebaut hat. Was dafür gehört, steht in `knowledge-base/standards/python.md` unter „Grundsätze“. Fehlt etwas davon, ist die Aufgabe nicht fertig.
 - **Dokumentation gehört zur Aufgabe.** Das README des Arbeitspakets wird mit jeder Lösung aktualisiert, nicht danach.

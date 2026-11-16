@@ -24,4 +24,4 @@ Eine dem Projekt fremde Lehrperson zeichnet allein nach der Kurzanleitung auf, u
 
 ## Stand
 
-Noch nicht besetzt. Bis dahin wird die vorhandene Hardware von Hand bedient und die Aufnahme über den Simulator-Weg eingespielt.
+Noch nicht besetzt und **seit dem 13.11.2026 zurückgestellt**: Vorrang hat die Software, das Gerät folgt eher in der zweiten Projekthälfte. Bis dahin übernimmt FLEX3 Light die Aufnahme auf dem Rechner der Lehrperson, mit Kamera und Funkmikrofon am Laptop.

@@ -22,12 +22,17 @@ Getroffene Entscheidungen mit Begründung. Sie gelten, bis Nicolas sie ändert. 
 
 | Entscheidung | verworfen | Warum |
 |---|---|---|
+| **FLEX3 Light als zweiter Erzeuger** neben dem Gerät | nur das Gerät | Lehrende ohne Gerät im Raum können trotzdem aufzeichnen, und die Post-Pipeline bekommt früh echtes Material. Das Gerät bleibt. |
+| **Gerät zurückgestellt, Software zuerst** (13.11.2026) | Gerät parallel entwickeln | Für das Gerät gibt es derzeit niemanden. Ein Laptop mit Kamera, Funkmikrofon und FLEX3 Light zeigt alles, was das Gerät tun soll; ein Gerät ohne Software zeigte nur eine gewöhnliche Aufzeichnung. Das Gerät folgt eher in der zweiten Projekthälfte. |
+| **Transkript Wort für Wort mit Konfidenz**, Nachkorrektur durch ein Sprachmodell im Batch-Pfad (13.11.2026) | nur Fließtext oder Blöcke | Aus der feinsten Form lässt sich alles ableiten; die Konfidenz zeigt unsichere Stellen und Kandidaten für die Fachbegriffsliste. |
+| **Live-Übersetzung im Browser per QR-Code** (13.11.2026) | Integration in Teams oder Zoom | unabhängig von der Plattform der Veranstaltung; ein Agent für Teams-Sitzungen wäre ein Schritt nach dem Projekt. |
+| **Zusätzliche Spuren im Sitzungsordner erlaubt**, `recording.mp4` bleibt Pflicht | genau zwei Dateien je Ordner | Getrennte Quellen erlauben spätere Auswertungen, etwa Folientext aus dem Bildschirmbild oder sauberen Mikrofonton für die Transkription. |
 | **Transkription vor Dubbing** | Reihenfolge des Antrags | Das Transkript ist die Grundlage für Untertitel, Übersetzung und Zusammenfassungen. |
 | **Gerät liefert an eigenen Ingest-Endpunkt** | Direktupload nach Opencast | Das Gerät bleibt einfach; Opencast-Änderungen betreffen nur den Server. |
 | **Eigene Transkriptionskomponente mit Adaptern**, `transcript.json` als Artefakt | Whisper-Integration von Opencast; fest verdrahteter Anbieter | eigene Modell- und Qualitätskontrolle, Anbieterwechsel als Konfiguration, kein doppeltes Transkribieren |
 | **Server verteilt den Stream** | Gerät streamt an die Studierenden | Das Gerät ist hinter Firewall und NAT nicht erreichbar, und sein Uplink würde mit der Zahl der Zuhörenden wachsen. |
 | **Offen:** Auslieferung der Live-Untertitel, Varianten A, B und C in [live-pipeline.md](live-pipeline.md); bisheriger Entwurf war die Trennung nach Zielgruppe | WebRTC für alle | WebRTC skaliert nicht in die Breite; welche der drei Varianten gilt, wird vor dem Sommersemester 2027 entschieden. |
-| **Server von Anfang an im Rechenzentrum**, lokale Entwicklung mit `docker compose` | externe Cloud-VM als Zwischenstation | keine Migration am Projektende, Aufzeichnungen bleiben im Haus |
+| **Server im Rechenzentrum**, lokale Entwicklung mit `docker compose`; bis dahin Serverseite auf einer Workstation bei Nicolas (Anfrage zurückgestellt am 06.11.2026, Server frühestens 2027) | externe Cloud-VM als Zwischenstation | keine Migration am Projektende, Aufzeichnungen bleiben im Haus |
 | **Alles in Containern** | Handkonfiguration auf der VM | lokale und gehostete Umgebung sind identisch, und die Übergabe 2028 wird zur Formalie. |
 | **Test- und Produktivserver** | eine Maschine für Erprobung und Betrieb | Neue Stände lassen sich erproben, ohne laufende Veranstaltungen zu gefährden. |
 | **Weboberfläche für Lehrende mit Prüfschritt** | KI-Inhalte ungeprüft direkt in ILIAS | Lehrende wollen Inhalte prüfen, bevor Studierende sie sehen, und selbst bestimmen, was entsteht. |

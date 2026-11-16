@@ -18,7 +18,9 @@
 | **ISO** (beim ATEM) | Aufzeichnung jeder Kamera als eigene Datei zusätzlich zum Programm-Mix |
 | **MediaMTX** | kleiner Medienserver, der RTMP-Streams annimmt und weiterreicht |
 | **Nutzerregister** | zentrale Liste der Lehrenden mit ihren Veranstaltungen, Kurs-IDs und Freigaben |
-| **OBS Studio** | kostenlose Software zum Aufnehmen und Streamen; unser Live-Simulator |
+| **OBS Studio** | kostenlose Software zum Aufnehmen und Streamen; Grundlage der Aufnahme in FLEX3 Light |
+| **FLEX3 Light** | Desktop-Anwendung auf dem Rechner der Lehrperson, die Bildschirm und Kamera aufnimmt und Sitzungsordner an den Server schickt; Alternative zum Gerät und, solange es zurückgestellt ist, der Aufnahmeweg |
+| **Konfidenz** | Wahrscheinlichkeit, mit der das Modell ein Wort richtig erkannt zu haben glaubt; steht je Wort in `transcript.json` |
 | **Opencast** | Videoplattform der Hochschule; speichert die Aufzeichnungen, ILIAS zeigt sie an |
 | **Programm-Mix** | das fertig gemischte Bild mit Ton, wie es aufgezeichnet und gestreamt wird |
 | **Realtime-API** | Schnittstelle, die Ton laufend entgegennimmt und laufend Text oder übersetzte Sprache zurückliefert |

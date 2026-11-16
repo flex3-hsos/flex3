@@ -38,7 +38,7 @@ Zur Aufzeichnung gehört eine Zuordnung: wer zeichnet auf und welche Veranstaltu
 
 ## Der Übergabepunkt
 
-Zwischen Gerät und Software liegt genau ein Artefakt, der Sitzungsordner. Einzelheiten in [session-folder.md](session-folder.md). Solange das Gerät nicht verfügbar ist, erzeugt der [Simulator](device-simulator.md) dieselben Ordner aus beliebigen Videodateien.
+Zwischen Gerät und Software liegt genau ein Artefakt, der Sitzungsordner. Einzelheiten in [session-folder.md](session-folder.md). Solange das Gerät nicht verfügbar ist, erzeugt der [Simulator](device-simulator.md) dieselben Ordner aus beliebigen Videodateien. Als Alternative zum Gerät, und solange das Gerät zurückgestellt ist als eigentlicher Aufnahmeweg, gibt es außerdem **FLEX3 Light**: Software auf dem Rechner der Lehrperson, die Bildschirm und Webcam aufnimmt und daraus ebenfalls Sitzungsordner nach demselben Vertrag liefert, mit Bildschirm und Kamera als zusätzlichen Spuren. Das Gerät bleibt; für die Post-Pipeline ist es egal, woher ein Ordner kommt.
 
 ## Die Post-Pipeline (S1–S3, S7)
 
@@ -50,4 +50,4 @@ Läuft während der Vorlesung. Der Server verteilt den Stream an die Studierende
 
 ## Wo das alles läuft
 
-Der FLEX³-Server läuft im Rechenzentrum der Hochschule, neben Opencast. Geplant sind ein Testserver und ein Produktivserver: Neue Stände laufen erst auf dem Testserver, dann im Betrieb. Alles läuft in Containern. Entwickelt wird lokal: Der gesamte Stack läuft per `docker compose` auf dem eigenen Laptop, und auf die Maschine im Rechenzentrum wird nur deployt.
+Vorerst läuft die Serverseite auf einer Workstation bei Nicolas; die Anfrage beim Rechenzentrum ist zurückgestellt, ein Server dort kommt frühestens 2027 (Nicolas, 06.11.2026). Das Ziel bleibt: Der FLEX³-Server läuft im Rechenzentrum der Hochschule, neben Opencast. Geplant sind ein Testserver und ein Produktivserver: Neue Stände laufen erst auf dem Testserver, dann im Betrieb. Alles läuft in Containern. Entwickelt wird lokal: Der gesamte Stack läuft per `docker compose` auf dem eigenen Laptop, und auf die Maschine im Rechenzentrum wird nur deployt.
