@@ -1,11 +1,22 @@
 # Der Sitzungsordner – Vertrag zwischen Gerät und Software
 
-Jede Aufzeichnung ist ein Ordner mit genau zwei Dateien. Gerät und Simulator erzeugen ihn, die Post-Pipeline verarbeitet ihn. **Dieser Vertrag wird nur in Absprache mit Nicolas geändert.**
+Jede Aufzeichnung ist ein Ordner. Erzeugt wird er vom Gerät, vom Simulator oder von FLEX3 Light (Software auf dem Rechner der Lehrperson, eine Alternative zum Gerät); die Post-Pipeline verarbeitet ihn. **Dieser Vertrag wird nur in Absprache mit Nicolas geändert.**
 
-| Datei | Inhalt |
-|---|---|
-| `recording.mp4` | Programm-Mix vom Mischer inklusive Ton, H.264 / AAC 48 kHz, 1080p |
-| `session.json` | Metadaten der Sitzung |
+| Datei | Inhalt | |
+|---|---|---|
+| `recording.mp4` | Programm-Mix inklusive Ton, H.264 / AAC 48 kHz, 1080p: das, was die Studierenden sehen | Pflicht |
+| `session.json` | Metadaten der Sitzung | Pflicht |
+| weitere Spuren, z. B. `camera.mp4`, `screen.mp4` | einzelne Quellen getrennt vom Mix, etwa Kamera und Bildschirm | optional |
+
+## Zusätzliche Spuren
+
+Seit dem 26.10.2026 darf ein Erzeuger neben `recording.mp4` weitere Video- oder Tonspuren in den Ordner legen. Für sie gilt:
+
+- Sie heißen sprechend und englisch, etwa `camera.mp4`, `screen.mp4` oder `audio-mic.wav`.
+- Sie beginnen im selben Moment wie `recording.mp4`, damit Zeitstempel aus dem Transkript auf alle Spuren passen.
+- Sie stehen in `session.json` unter `tracks`, je Spur mit Datei und Art.
+
+Die Post-Pipeline verarbeitet weiterhin `recording.mp4`. Der Ingest nimmt die übrigen Spuren unverändert mit und legt sie bei der Sitzung ab, damit spätere Schritte sie nutzen können, etwa das Bildschirmbild für Folientext oder das Mikrofon allein für die Transkription. Code, der einen Sitzungsordner liest, darf an zusätzlichen Dateien nicht scheitern.
 
 ## `session.json`
 
@@ -29,7 +40,11 @@ Jede Aufzeichnung ist ein Ordner mit genau zwei Dateien. Gerät und Simulator er
   },
   "consent_source": "register",
   "device_id": "flex3-01",
-  "software_version": "1.2.0"
+  "software_version": "1.2.0",
+  "tracks": [
+    { "file": "camera.mp4", "kind": "camera" },
+    { "file": "screen.mp4", "kind": "screen" }
+  ]
 }
 ```
 
@@ -47,6 +62,7 @@ Jede Aufzeichnung ist ein Ordner mit genau zwei Dateien. Gerät und Simulator er
 | `consent_source` | `register` (Freigaben aus dem Nutzerregister) oder `restricted_on_device` (am Gerät für diese Sitzung eingeschränkt) |
 | `device_id` | welches Gerät aufgezeichnet hat; der Simulator verwendet `simulator` |
 | `software_version` | Version der Gerätesoftware bzw. des Simulators |
+| `tracks` | optional: zusätzliche Spuren, je Eintrag `file` und `kind` (`camera`, `screen`, `audio` …); fehlt, wenn es nur `recording.mp4` gibt |
 
 ## Regeln für die Verarbeitung
 

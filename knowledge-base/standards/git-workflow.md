@@ -63,4 +63,4 @@ Ein Hook in `.claude/hooks/guard_git.py` blockiert:
 
 ## Was ihr nicht ändert
 
-`knowledge-base/`, `.claude/`, `CLAUDE.md`, `.github/` und `pyproject.toml` pflegt Nicolas. Fehler oder Wünsche dazu bringt ihr ins Weekly.
+`knowledge-base/`, `.claude/`, `CLAUDE.md`, `.github/` und `pyproject.toml` pflegt Nicolas. Fehler oder Wünsche dazu bringt ihr in den Jour Fixe.

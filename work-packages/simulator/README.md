@@ -10,13 +10,12 @@ Derselbe Weg nimmt auch echte Aufzeichnungen an, die mit der vorhandenen Hardwar
 
 **Testmaterial:** Zwei von Hand gebaute Beispiel-Sitzungen liegen schon unter `testdata/sessions/` (Deutsch und Englisch, je rund fünf Minuten). Der Simulator soll Ordner im selben Format erzeugen. Weitere Aufzeichnungen liegen nicht im Repository, sondern unter `FLEX3_DATA_DIR`.
 
-**Stufe 2 – Live-Simulator:** OBS-Profil und Szenensammlung, mit denen OBS sich gegenüber dem Server wie das Gerät verhält.
+~~**Stufe 2 – Live-Simulator:** OBS-Profil und Szenensammlung, mit denen OBS sich gegenüber dem Server wie das Gerät verhält.~~ Entfällt: FLEX3 Light übernimmt Aufnahme und Stream (13.11.2026).
 
 ## Fertig, wenn
 
 - Stufe 1: Aus jeder Videodatei unter `FLEX3_DATA_DIR` entsteht mit einem Befehl ein gültiger Sitzungsordner, den die Post-Pipeline ohne Anpassung verarbeitet. Die erzeugte `session.json` ist durch Tests abgesichert.
-- Stufe 2: Profil und Szenensammlung liegen unter `config/obs/`, und eine Anleitung beschreibt den Import in drei Schritten.
 
 ## Stand
 
-Noch nicht begonnen. Wird zunächst nur so weit gebaut, wie die Transkription es braucht; notfalls reicht ein von Hand angelegter Beispielordner.
+Eine einfache Fassung von Stufe 1 gibt es (Stand 13.11.2026): Sie legt aus einer MP4-Datei und Angaben wie Datum und Sprache einen Sitzungsordner an. Weiter ausgebaut wird sie nicht, weil Nicolas **FLEX3 Light** bereitstellt, eine Desktop-Anwendung, die frische Aufnahmen samt Metadaten als Sitzungsordner liefert.

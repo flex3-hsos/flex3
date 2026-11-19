@@ -33,13 +33,15 @@ Gebaut wird nicht Stufe für Stufe, sondern in acht Arbeitspaketen, die entlang 
 
 | Rang | Pakete | Warum |
 |---|---|---|
-| **1 · Kern** | Simulator, Transkription, Ingest und Bereitstellung, KI-Inhalte | Die Post-Pipeline wirkt für jede Aufzeichnung, auch ohne Gerät, und trägt Meilenstein M1. |
+| **1 · Kern** | Simulator bzw. FLEX3 Light, Transkription, Ingest und Bereitstellung, KI-Inhalte | Die Post-Pipeline wirkt für jede Aufzeichnung, auch ohne Gerät, und trägt Meilenstein M1. |
 | **2 · gesetzt** | Live-Untertitel, Teil 7a: Anbieterwahl und Prototyp | läuft über eine Bachelorarbeit und nimmt Risiko aus dem schwersten Teil |
 | **3 · günstig mitnehmen** | Livestream, Schritt 1: direkt zu YouTube | kostet keine Entwicklung |
 | **4 · nächster Ausbau** | Live-Untertitel, Teil 7b: Untertitel im Hörsaal | größter Nutzen des Live-Pfads bei überschaubarem Aufwand |
 | **5 · nur mit zusätzlicher Person** | Gerät über die vorhandene Hardware hinaus, eigene Stream-Auslieferung, Teil 7c, Audiospur, Dubbing | brauchen mehr Leute |
 
 ## Phasen
+
+**Das Gerät ist zurückgestellt** (Nicolas, Jour Fixe 13.11.2026). Es bleibt im Plan, rückt aber eher in der zweiten Projekthälfte in den Fokus. Vorrang hat eine Software-Pipeline, die zeigt, dass das Vorhaben funktioniert: Alles, was das Gerät tut, lässt sich vorerst mit einem Laptop samt Kamera und Funkmikrofon und **FLEX3 Light** zeigen. Die Spalte „Gerät“ unten ist deshalb nur noch die Abfolge, nicht mehr der Zeitplan; wie M3 angepasst wird, entscheidet Nicolas.
 
 | Phase | Zeitraum | Software (Track S) | Gerät (Track H) |
 |---|---|---|---|
@@ -56,13 +58,13 @@ Gebaut wird nicht Stufe für Stufe, sondern in acht Arbeitspaketen, die entlang 
 |---|---|---|
 | **M1** | Dez 2026 | Eine echte Vorlesung wird aufgezeichnet, landet automatisch in Opencast/ILIAS und hat Transkript, Sprungmarken und KI-Zusammenfassung – roh, aber durchgängig |
 | **M2** | Mrz 2027 | Aufzeichnung im Regelbetrieb einer Veranstaltung nutzbar, Livestream läuft |
-| **M3** | Jul 2027 | Echtzeit-Untertitel im echten Betrieb; Gerät V2 von Dritten nachbaubar |
+| **M3** | Jul 2027 | Echtzeit-Untertitel im echten Betrieb; Gerät V2 von Dritten nachbaubar (Geräteteil nach der Rückstellung neu zu fassen) |
 | **M4** | Sep 2027 | Übersetzte Audiospur (Versuch); Zwischenergebnisse veröffentlicht |
 | **M5** | Jan 2028 | Alle sieben Stufen im Feld erprobt |
 | **M6** | Mrz 2028 | Projektabschluss, Übergabe, Verstetigungskonzept |
 
 Geplant ist bis März 2028. Das Budget ist fest; reicht das Personal nicht, um es in dieser Zeit auszugeben, kann die Laufzeit verlängert werden. Fehlende Leute verschieben dann die Phasen, statt Stufen zu streichen.
 
-## Sprints
+## Arbeitsrhythmus
 
-Gearbeitet wird in Monatssprints mit einem Review am Monatsende. Was im laufenden Sprint ansteht, steht im Projektboard: <https://github.com/orgs/flex3-hsos/projects/1>
+Das Projekt arbeitet vorerst ohne Sprints (Entscheidung von Nicolas, 27.10.2026). Aufgaben werden laufend vergeben und angepasst; was ansteht, steht im Projektboard: <https://github.com/orgs/flex3-hsos/projects/1>. Abgestimmt wird im Jour Fixe alle zwei Wochen freitags um 13 Uhr.

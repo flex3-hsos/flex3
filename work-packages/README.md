@@ -6,7 +6,7 @@ Jedes Arbeitspaket hat einen eigenen Ordner. Ihr arbeitet nur im Ordner eures Ar
 
 | # | Ordner | Stufen | Eingang → Ausgang | Rang |
 |---|---|---|---|---|
-| 1 | [simulator/](simulator/) | – | Videodatei → Sitzungsordner; OBS-Profil für den Live-Pfad | 1 |
+| 1 | [simulator/](simulator/) | – | Videodatei → Sitzungsordner; frische Aufnahmen liefert FLEX3 Light | 1 |
 | 2 | [device/](device/) | S1 Geräteseite | Kamera, Ton, Laptop → Sitzungsordner und Live-Stream | 5 |
 | 3 | [ingest-delivery/](ingest-delivery/) | S1 Serverseite | Sitzungsordner und Ergebnisdateien → Opencast/ILIAS; Weboberfläche für Lehrende | 1 |
 | 4 | [transcription/](transcription/) | S2 | Sitzungsordner → `transcript.json`, WebVTT, Sprungmarken | 1 |

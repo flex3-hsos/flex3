@@ -6,6 +6,17 @@ Die Live-Pipeline läuft während der Vorlesung: S4 (Livestream), S5 (Echtzeit-U
 
 Der Steuerrechner schickt genau einen Stream an den FLEX³-Server. Der Server verteilt ihn an die Studierenden und schickt den Ton parallel an eine Realtime-API, die Untertitel und optional eine übersetzte Audiospur erzeugt. Zwei Varianten sind im Vorprojekt erprobt: eine Azure-Kette aus Spracherkennung, Übersetzung und Sprachausgabe sowie die OpenAI Realtime API.
 
+## Stand des Prototyps (13.11.2026)
+
+Im Rahmen der Bachelorarbeit zu den Live-Untertiteln läuft lokal bereits eine Kette aus Streaming-Transkription (Speechmatics), Übersetzung und Sprachausgabe (Stimme von OpenAI), angezeigt im Browser. Studierende sollen die Seite über einen QR-Code öffnen. Gemessen sind **vier bis sieben Sekunden** bis zur übersetzten Ausgabe; die größte Hürde ist der Satzbau, weil manche Zielsprachen erst nach dem ganzen deutschen Satz übersetzt werden können. Vorläufige Blöcke werden markiert und nach Satzende korrigiert, und ein Glossar hält Fachwörter und Namen unübersetzt und legt ihre Aussprache fest.
+
+Festgelegt ist: Die Ausspielung läuft über den Browser, nicht über eine Integration in Teams oder Zoom. Offen sind:
+
+- **Sprachen nach Bedarf:** Eine Sprache startet erst, wenn jemand sie wählt, auch mitten in der Sitzung oder von zu Hause, statt alle Sprachen ständig mitzuübersetzen.
+- **Hervorhebung der gesprochenen Stelle** im vorauslaufenden Untertitel, damit man mitlesen kann und trotzdem sieht, wo die Stimme gerade ist.
+- **Dieselbe Übersetzungstechnik live und im Batch-Pfad**, damit es keine Qualitätsunterschiede gibt.
+- **Kosten:** erst die Machbarkeit, dann die Kosten und danach die Bewertung.
+
 ## Das Latenzproblem
 
 Das ist der wichtigste Stolperstein des Live-Pfads, denn zwei Zielgruppen haben widersprüchliche Anforderungen:
@@ -51,4 +62,4 @@ WebRTC für alle wäre einfacher, skaliert aber nicht: Es verteilt an jeden einz
 
 ## Server und Entwicklung
 
-Der Server läuft im Rechenzentrum der Hochschule, alles in Containern. Entwickelt wird lokal mit `docker compose`; für den Live-Pfad liefert OBS als [Live-Simulator](device-simulator.md) den Eingangsstream.
+Der Server soll im Rechenzentrum der Hochschule laufen, alles in Containern; vorerst läuft die Serverseite auf einer Workstation bei Nicolas (seit 06.11.2026, ein Server kommt frühestens 2027). Entwickelt wird lokal mit `docker compose`; den Eingangsstream für den Live-Pfad liefert FLEX3 Light.

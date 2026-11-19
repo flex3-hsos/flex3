@@ -22,4 +22,4 @@ Die **übersetzte Audiospur (S6)** ist eine Erweiterung von 7b um Sprachausgabe 
 
 ## Stand
 
-7a läuft im Rahmen einer Bachelorarbeit; 7b geplant für P2 (April bis Juli 2027).
+7a läuft im Rahmen einer Bachelorarbeit. Ein lokaler Prototyp transkribiert, übersetzt und spricht die Übersetzung aus, angezeigt im Browser per QR-Code, mit vier bis sieben Sekunden Verzögerung (Stand 13.11.2026, Einzelheiten in `knowledge-base/architecture/live-pipeline.md`). Damit gibt es auch für S6 einen Ansatz. Bis Mitte Dezember folgen die Hervorhebung der gesprochenen Stelle und, falls vertretbar, das Zuschalten einer Sprache im laufenden Betrieb. Sprachtests durch Muttersprachlerinnen und Muttersprachler sind ab Januar geplant, möglichst auf einem erreichbaren Testserver. 7b geplant für P2 (April bis Juli 2027).

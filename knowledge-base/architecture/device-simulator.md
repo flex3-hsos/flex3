@@ -4,13 +4,15 @@ Es gibt genau ein Gerät, und es kann nicht gleichzeitig im Hörsaal stehen und 
 
 Der Simulator lebt im Arbeitspaket `work-packages/simulator/`.
 
+> **Stand 13.11.2026:** Eine einfache Fassung von Stufe 1 gibt es, weiter ausgebaut wird sie nicht. Nicolas stellt **FLEX3 Light** bereit, eine kleine Desktop-Anwendung, die Bildschirm und Kamera aufnimmt und Sitzungsordner samt Metadaten an den Server schickt; dabei blendet sie Taskleiste und Fensterwechsel aus. Wer frische Aufnahmen braucht, etwa eigene Testaufnahmen für die Transkription, nimmt FLEX3 Light. Stufe 2 mit einem eigenen OBS-Profil entfällt damit.
+
 ## Stufe 1: Datei-Simulator
 
 Ein kleines Skript nimmt eine beliebige Videodatei und erzeugt daraus einen gültigen [Sitzungsordner](session-folder.md): Datei als `recording.mp4` ablegen, eine `session.json` mit plausiblen Metadaten daneben schreiben, `device_id` auf `simulator` setzen. Das reicht, um Upload, Transkription und Zusammenfassungen zu entwickeln.
 
 Der eigentliche Wert liegt im Eingabematerial: Aufzeichnungen echter Vorlesungen aus dem Vorprojekt im Wintersemester 2025/26, mit echter Hörsaalakustik, Nachhall und Fachvokabular. Sie liegen **nicht** im Repository, sondern werden euch separat bereitgestellt (siehe [data-protection.md](../standards/data-protection.md)); der Pfad steht in der Umgebungsvariable `FLEX3_DATA_DIR`. Bis dahin gibt es zwei fertige Beispiel-Sitzungen im Repository unter `testdata/sessions/`, eine auf Deutsch und eine auf Englisch.
 
-## Stufe 2: Live-Simulator mit OBS
+## Stufe 2: Live-Simulator mit OBS (entfällt, FLEX3 Light übernimmt)
 
 OBS Studio ist eine kostenlose Software zum Aufnehmen und Streamen, die im Kern dasselbe tut wie der Videomischer, nur auf einem Laptop. Für die Live-Pipeline wird OBS so eingestellt, dass es sich wie das Gerät verhält:
 
